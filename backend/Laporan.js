@@ -1,0 +1,62 @@
+const mongoose = require('mongoose');
+
+const laporanSchema = new mongoose.Schema({
+  noLp: String,
+  nama: String,
+  noIdentitas: String,
+  kewarganegaraan: String,
+  jenisKelamin: String,
+  tempatLahir: String,
+  tanggalLahir: String,
+  pekerjaan: String,
+  agama: String,
+  alamat: String,
+  noTelepon: String,
+
+  hariKejadian: String,
+  tanggalKejadian: String,
+  pukulJam: String,
+  pukulMenit: String,
+  zonaWaktu: String,
+  tempatKejadian: String,
+  apaYangTerjadi: String,
+
+  siapaTerlapor: String,
+  terlaporNama: String,
+  terlaporNoIdentitas: String,
+  terlaporKewarganegaraan: String,
+  terlaporSuku: String,
+  terlaporJenisKelamin: String,
+  terlaporTempatLahir: String,
+  terlaporTanggalLahir: String,
+  terlaporUmurTahun: String,
+  terlaporUmurBulan: String,
+  terlaporUmurHari: String,
+  terlaporPekerjaan: String,
+  terlaporAgama: String,
+  terlaporAlamat: String,
+  terlaporNoTelp: String,
+  terlaporMediaSosial: String,
+  terlaporKorporasi: Boolean,
+
+  korbanNama: String,
+  korbanNoIdentitas: String,
+  korbanKewarganegaraan: String,
+  korbanSuku: String,
+  korbanJenisKelamin: String,
+  korbanTempatLahir: String,
+  korbanTanggalLahir: String,
+  korbanUmurTahun: String,
+  korbanUmurBulan: String,
+  korbanUmurHari: String,
+  korbanPekerjaan: String,
+  korbanAgama: String,
+  korbanAlamat: String,
+  korbanNoTelp: String,
+  korbanMediaSosial: String,
+  korbanKorporasi: Boolean,
+
+  createdAt: { type: Date, default: Date.now }
+});
+
+module.exports = mongoose.model('Laporan', laporanSchema);
